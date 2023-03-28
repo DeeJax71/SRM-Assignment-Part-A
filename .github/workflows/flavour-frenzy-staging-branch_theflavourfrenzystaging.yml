@@ -28,7 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build:
     runs-on: windows-latest
-    need: run-lint
+    needs: run-lint
 
     steps:
       - uses: actions/checkout@v2
